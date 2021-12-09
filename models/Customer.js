@@ -8,9 +8,9 @@ class Customer extends Model {
 }
 //create attributes for model using init method
 Customer.init({
-    customer_id: DataTypes.INTEGER,
+    
     payment_type: DataTypes.STRING,
-    item_id: DataTypes.INTEGER,
+    
     customer_name: DataTypes.STRING
 }, {
     sequelize, //specifies what database our model is stored in

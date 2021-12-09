@@ -8,10 +8,10 @@ class Payment extends Model {
 }
 //create attributes for model using init method
 Payment.init({
-    payment_id: DataTypes.INTEGER,
+   // payment_id: DataTypes.INTEGER,
     payment_type: DataTypes.STRING,
     customer_id: DataTypes.INTEGER,
-    item_name: DataTypes.STRING
+    speciality_name: DataTypes.STRING
 }, {
     sequelize, //specifies what database our model is stored in
     timestamps: false

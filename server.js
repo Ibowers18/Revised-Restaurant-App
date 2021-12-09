@@ -9,7 +9,7 @@ const { Customer } = require('./models/Customer')
 
 const app = express()
 const port = 3000
-
+app.use(express.json())
 //points toward folder of static files
 app.use(express.static(path.join(__dirname, 'public')))
 
@@ -38,6 +38,35 @@ app.get('/restaurants/:id', async (req,res) => {
     const thisRestaurants = await Restaurant.findByPk(req.params.id)
     //respond with allRestaurants as a json objeect
     res.json(thisRestaurants)
+})
+
+//create one restaurant
+app.post('/restaurants', async (req,res) => {
+    //create a restaurant using the json object passed in the request body
+    let newRestaurant = await Restaurant.create(req.body)
+    //respond with newRestaurants as a json objeect
+    res.send(newRestaurant ?  'Restaurant created': 'post failed')
+})
+
+//update one restaurant by id
+app.put('/restaurants/:id', async (req,res) => {
+    //update a restaurant using the json object passed in the request body
+    let updateRestaurants = await Restaurant.update(req.body, {
+        where: {id: req.params.id}      
+    })
+    //respond with newRestaurants as a json objeect
+    res.send("Restaurants updated")
+})
+
+//delete one restaurant by id
+app.delete('/restaurants/:id', async (req,res) => {
+    //delete the restaurant matching the request parameter id
+     await Restaurant.destroy({
+        where: {id: req.params.id}
+     }) 
+    //send string messageas response
+    res.send('Restaurant deleted')
+        
 })
 
 //GET method on /Menu route returns menu selections

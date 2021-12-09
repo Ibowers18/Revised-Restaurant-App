@@ -8,10 +8,10 @@ class Chef extends Model {
 }
 //create attributes for model using init method
 Chef.init({
-    chef_id: DataTypes.INTEGER,
+    
     chef_name: DataTypes.STRING,
     salary: DataTypes.FLOAT,
-    item_name: DataTypes.STRING
+    speciality_name: DataTypes.STRING
 }, {
     sequelize, //specifies what database our model is stored in
     timestamps: false

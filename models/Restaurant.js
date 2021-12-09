@@ -6,8 +6,9 @@ class Restaurant extends Model {}
 Restaurant.init({
     name: DataTypes.STRING,
     location: DataTypes.STRING,
-    cuisine: DataTypes.STRING,
-    restaurant_id: DataTypes.INTEGER
+    cuisine: DataTypes.STRING
+
+    
 }, {
     sequelize,
     timestamps: false

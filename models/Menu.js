@@ -13,7 +13,7 @@ Menu.init({
     //entree_name: DataTypes.STRING,
     //price: DataTypes.FLOAT
 
-    menu_id: DataTypes.INTEGER,
+   
     menu_type: DataTypes.TEXT
 
 

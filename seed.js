@@ -14,32 +14,31 @@ const seedRestaurant = [
   {
     name: 'AppleBees',
     location: 'Texas',
-    cuisine: 'FastFood',
-    restaurant_id: 9
-  },
+    cuisine: 'FastFood,'
+  }, 
   {
     name: 'LittleSheep',
     location: 'Dallas',
     cuisine: 'Hotpot',
-    restaurant_id: 8
+    
   },
   {
     name: 'Spice Grill',
     location: 'Houston',
     cuisine: 'Indian',
-    restaurant_id: 7
+    
   },
   {
     name: 'burgetking',
     location: 'Dallas',
     cuisine: 'Hotpot',
-    restaurant_id: 6
+    
   },
   {
     name: 'MCDS',
     location: 'Dallas',
     cuisine: 'Hotpot',
-    restaurant_id: 5
+    
   },
 ]
 
@@ -49,16 +48,16 @@ const seedRestaurant = [
    // entree_name: "Bar-B-Que",
    // price: 19.99
      
-      menu_id: 1,
-      menu_type: "Main",
+      //menu_id: 1,
+      menu_type: "Main"
      },
      {
     // entree_id: 1002,
     // entree_name: "Jerk Chicken",
     // price: 12.99
 
-     menu_id: 2,
-     menu_type: "Take Out",
+    // menu_id: 2,
+     menu_type: "Take Out"
 
     },
     {    
@@ -66,8 +65,8 @@ const seedRestaurant = [
     //entree_name: "Greek Salad",
     //price: 9.99
 
-    menu_id: 3,
-    menu_type: "Catering",
+   // menu_id: 3,
+    menu_type: "Catering"
 
     },
  ]
@@ -77,82 +76,82 @@ const seedItem = [
   vegan: 0,
   item_name: "Bar-B-Que",
   price: 9.50,  
-  item_id: 101
+  //item_id: 101
   },
   {
   vegan: 0,
   item_name: "Jerk Chicken",
   price: 1.99,  
-  item_id: 201    
+ //item_id: 201    
   },
   {
   vegan: 1,
   item_name: "Pastry",
   price: 6.99,  
-  item_id: 301   
+  //item_id: 301   
   },
   
  ]  
 
  const seedChef = [
   {
-  chef_id: 1111,
+  //chef_id: 1111,
   chef_name: "Pierce",
   salary: 65000,  
-  item_name: "Bar-B-Que"
+  speciality_name: "Bar-B-Que"
   },
   {
-  chef_id: 2222,
+  //chef_id: 2222,
   chef_name: "Kandance",
   salary: 65500, 
-  item_name: "Jerk Chicken"    
+  speciality_name: "Jerk Chicken"    
   },
   {
-  chef_id: 3333,
+  //chef_id: 3333,
   chef_name: "Kyle",
   salary: 55000,  
-  item_name: "Pastry"   
+  speciality_name: "Pastry"   
   },
   
  ]  
 
  const seedPayment = [
   {
-  payment_id: 50,
+ // payment_id: 50,
   payment_type: "Cash",
   customer_id: 501,  
-  item_name: "Bar-B-Que"
+  speciality_name: "Bar-B-Que"
   },
   {
-  payment_id: 60,
+  //payment_id: 60,
   payment_type: "Card",
   customer_id: 601, 
-  item_name: "Jerk Chicken"    
+  speciality_name: "Jerk Chicken"    
   },
   {
-  payment_id: 70,
+  //payment_id: 70,
   payment_type: "Check",
   customer_id: 701,  
-  item_name: "Pastry"   
+  speciality_name: "Pastry"   
   },
   
  ]  
 
  const seedCustomer = [
   {
-  customer_id: 50,
+  //customer_id: 50,
   payment_type: "Cash",
   item_id: 501,  
   customer_name: "Irene"
   },
   {
-  customer_id: 60,
+  //customer_id: 60,
   payment_type: "Card",
   item_id: 601, 
   customer_name: "Devetta"    
   },
   {
-  customer_id: 70,
+ // customer_id: 70,
   payment_type: "Check",
   item_id: 701,  
   customer_name: "Lynett"   

@@ -9,7 +9,7 @@ class Item extends Model {
 //create attributes for model using init method
 Item.init({
     vegan: DataTypes.BOOLEAN,
-    item_id: DataTypes.INTEGER,
+    
     item_name: DataTypes.STRING,
     price: DataTypes.FLOAT
 }, {
